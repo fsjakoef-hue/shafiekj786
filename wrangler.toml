@@ -1,0 +1,17 @@
+name = "shafiekj786"
+main = "src/worker.js"
+compatibility_date = "2026-06-04"
+workers_dev = true
+
+# Optional: set in Cloudflare dashboard or with `wrangler secret put TMDB_API_KEY`.
+# [vars]
+# TMDB_API_KEY = ""
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tfms-db"
+# Replace this after running: npm run d1:create
+database_id = "1929b914-b345-421b-b14f-79971a7e01b8"
+
+[observability]
+enabled = true
